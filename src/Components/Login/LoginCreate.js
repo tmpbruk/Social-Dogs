@@ -6,6 +6,7 @@ import { UserContext } from "../../UserContext";
 import Button from "../Forms/Button";
 import Error from "../Helper/Error";
 import Input from "../Forms/Input";
+import Head from "../Helper/Head";
 
 const LoginCreate = () => {
   const username = useForm();
@@ -24,11 +25,12 @@ const LoginCreate = () => {
     });
     const { response } = await request(url, options);
     if (response.ok) userLogin(username.value, password.value);
-    console.log(response);
+    // console.log(response);
   };
 
   return (
     <section className="animeLeft">
+      <Head title="Criar conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSbmit}>
         <Input label="Usúario" type="text" name="username" {...username} />

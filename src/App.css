@@ -6,7 +6,7 @@
 
 body {
   margin: 0px;
-  padding: 4rem;
+  padding-top: 4rem;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'Spectral', georgia;
@@ -43,9 +43,13 @@ a{
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 800px;
   padding:  0 1rem;
   margin: 0 auto;
+}
+
+.mainContainer{
+  margin-top: 2rem;
 }
 
 .title{
@@ -81,4 +85,18 @@ a{
     opacity: 1;
     transform: initial;
   }
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody{
+ flex: 1; 
+}
+
+.VictoryContainer{
+  height: initial !important;
 }

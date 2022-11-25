@@ -8,7 +8,7 @@ const Header = () => {
   // console.log(context);
   return (
     <header className={styles.header}>
-      <nav className={`${styles.nav} container`}>
+      <nav className={` container ${styles.nav} `}>
         <Link className={styles.logo} to="/" aria-label="Dogs - Home">
           <Dogs />
         </Link>
